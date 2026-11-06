@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #F5B800;
+    --primary-hover: #E5A500;
+    --primary-dark: #C27803;
+    --primary-light: #FEE388;
+    --deep-brown: #3D1505;
+    --cream: #FFFDF9;
+    --light-beige: #EDE1D1;
+    --muted-green: #2E6B3E;
+    --gold: #F5B800;
+    --gold-light: #FEE388;
+    --gold-dark: #C27803;
+    --dark-text: #301608;
+    --muted-text: #735443;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFFDF9;
+    color: #301608;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif, .font-tenor {
+    font-family: 'Tenor Sans', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-nunito {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-jost {
+    font-family: 'Jost', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom subtle heritage accents */
+.bg-cream-radial {
+  background-color: #FFFDF9;
+}
+
+.gold-border-glow {
+  border: 1px solid #E5A00D;
+}
+
+.gujarati-pattern-bg {
+  background-color: #FFFDF9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #EDE1D1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D1505;
+}
