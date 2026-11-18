@@ -16,6 +16,9 @@ export const About: React.FC = () => {
   ];
 
   return (
+
+
+    
     <div className="bg-cream py-8 sm:py-10 lg:py-12">
       <SEOHead
         title={seoData.about.title}
