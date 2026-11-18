@@ -5,6 +5,7 @@ import {
   getOrganizationSchema,
   getProductSchema,
   getFAQPageSchema,
+  getWebsiteSchema,
 } from "../lib/seo";
 import { HeroSection } from "../components/home/HeroSection";
 import { FullWidthBanner } from "../components/home/FullWidthBanner";
@@ -23,6 +24,7 @@ import { FinalCTA } from "../components/home/FinalCTA";
 
 export const Home: React.FC = () => {
   const schemas = [
+    getWebsiteSchema(),
     getOrganizationSchema(),
     getProductSchema(),
     getFAQPageSchema(),

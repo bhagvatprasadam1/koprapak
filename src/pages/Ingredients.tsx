@@ -44,9 +44,7 @@ export const Ingredients: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
           <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
             100% PURE & HONEST SOURCING
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             What Is Kopra Pak Made Of?
@@ -61,8 +59,7 @@ export const Ingredients: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
             <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-center space-y-4 sm:space-y-5">
               <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-                <span className="inline-block w-3 h-0.5 bg-gold/70"></span>
-                premium ghee & PURE COCONUT PURITY
+                PREMIUM GHEE & PURE COCONUT PURITY
               </span>
               <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl text-deep-brown font-normal leading-tight">
                 Honoring the Purity of 100% Pure Premium Ghee & Fresh Grated Coconut
@@ -94,15 +91,18 @@ export const Ingredients: React.FC = () => {
               </div>
             </div>
             <div className="lg:col-span-7 relative min-h-[320px] sm:min-h-[420px] lg:min-h-full bg-cream-card">
-              <img
-                src="/images/kopra-pak-ingredients-flatlay.jpg"
-                alt="Overhead flat lay of pure authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) ingredients: fresh grated white coconut, 100% Pure Premium Ghee in brass vessel, slow-cooked mawa, Kashmiri saffron, cardamom, and slivered pistachios"
-                className="w-full h-full object-cover object-center absolute inset-0"
-                loading="eager"
-                fetchPriority="high"
-                width="1200"
-                height="896"
-              />
+              <picture className="w-full h-full block absolute inset-0">
+                <source srcSet="/images/kopra-pak-ingredients-flatlay.webp" type="image/webp" />
+                <img
+                  src="/images/kopra-pak-ingredients-flatlay.jpg"
+                  alt="Overhead flat lay of pure authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) ingredients: fresh grated white coconut, 100% Pure Premium Ghee in brass vessel, slow-cooked mawa, Kashmiri saffron, cardamom, and slivered pistachios"
+                  className="w-full h-full object-cover object-center absolute inset-0"
+                  loading="eager"
+                  fetchPriority="high"
+                  width="1200"
+                  height="670"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -157,9 +157,9 @@ export const Ingredients: React.FC = () => {
           <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em]">
             TRADITIONAL GUJARATI HALWAI WISDOM
           </span>
-          <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-cream">
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-cream">
             Ready to See How We Prepare Kopra Pak?
-          </h3>
+          </h2>
           <p className="text-cream/80 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
             Explore our 6-step artisanal roasting, mawa reduction, and saffron-cardamom tray setting technique that gives our Kopra Pak its signature melt-in-the-mouth texture.
           </p>

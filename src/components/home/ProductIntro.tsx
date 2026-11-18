@@ -22,8 +22,9 @@ export const ProductIntro: React.FC = () => {
                 alt="Close-up of authentic Gujarati Kopra Pak (Coconut Barfi / Nariyal Barfi) showing tender grated coconut flakes slow-cooked in 100% Pure Premium Ghee, milk mawa, and pistachio garnish"
                 className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
                 loading="lazy"
-                width="600"
-                height="450"
+                decoding="async"
+                width="1000"
+                height="1000"
               />
             </div>
             {/* Cultural caption */}

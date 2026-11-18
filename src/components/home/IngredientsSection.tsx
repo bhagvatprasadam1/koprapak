@@ -37,14 +37,18 @@ export const IngredientsSection: React.FC = () => {
               </div>
             </div>
             <div className="lg:col-span-7 h-full">
-              <img
-                src="/images/kopra-pak-ingredients-flatlay.jpg"
-                alt="Aesthetic overhead flat lay of authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) ingredients: fresh grated coconut, Pure Premium Ghee in brass vessel, slow-cooked milk mawa, Kashmiri saffron, green cardamom, and pistachios"
-                className="w-full h-full object-cover max-h-[380px] lg:max-h-none"
-                loading="lazy"
-                width="700"
-                height="450"
-              />
+              <picture className="w-full h-full block">
+                <source srcSet="/images/kopra-pak-ingredients-flatlay.webp" type="image/webp" />
+                <img
+                  src="/images/kopra-pak-ingredients-flatlay.jpg"
+                  alt="Aesthetic overhead flat lay of authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) ingredients: fresh grated coconut, Pure Premium Ghee in brass vessel, slow-cooked milk mawa, Kashmiri saffron, green cardamom, and pistachios"
+                  className="w-full h-full object-cover max-h-[380px] lg:max-h-none"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="670"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -60,9 +64,9 @@ export const IngredientsSection: React.FC = () => {
                 <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gold block mb-1">
                   {item.category}
                 </span>
-                <h4 className="font-serif text-sm sm:text-base lg:text-lg font-bold text-deep-brown leading-snug">
+                <h3 className="font-serif text-sm sm:text-base lg:text-lg font-bold text-deep-brown leading-snug">
                   {item.name}
-                </h4>
+                </h3>
                 <span className="text-[11px] sm:text-xs text-primary font-medium block mt-0.5 mb-2 sm:mb-3">
                   {item.gujaratiName}
                 </span>

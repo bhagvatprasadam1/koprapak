@@ -108,9 +108,9 @@ export const ProcessTimeline: React.FC = () => {
                 <span>Patience Is The Recipe</span>
               </div>
               
-              <h4 className="font-serif text-2xl sm:text-3xl text-deep-brown font-normal mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl text-deep-brown font-normal mb-3">
                 Over 6 Hours of Handcrafted Devotion
-              </h4>
+              </h3>
               
               <p className="text-muted-text text-sm sm:text-base leading-relaxed max-w-lg mx-auto mb-6">
                 From fresh coconut grating and slow ghee roasting to artisanal tray setting, each small batch honours sacred Kathiawadi and Gujarati culinary traditions.

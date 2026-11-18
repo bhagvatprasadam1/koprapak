@@ -112,9 +112,7 @@ export const FAQ: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
             HELP & KNOWLEDGE BASE
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             Frequently Asked Questions
@@ -156,9 +154,9 @@ export const FAQ: React.FC = () => {
 
         {/* Still Have Questions CTA */}
         <div className="bg-light-beige/60 rounded-3xl p-6 sm:p-8 border border-gold/40 text-center space-y-4 max-w-3xl mx-auto">
-          <h3 className="font-serif text-xl sm:text-2xl font-normal text-deep-brown">
+          <h2 className="font-serif text-xl sm:text-2xl font-normal text-deep-brown">
             Still Have Questions?
-          </h3>
+          </h2>
           <p className="text-muted-text text-sm sm:text-base max-w-md mx-auto leading-relaxed">
             Our team is always delighted to assist you with custom orders,
             dietary queries, or delivery schedules.

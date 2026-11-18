@@ -18,7 +18,6 @@ export const HeroSection: React.FC = () => {
           >
             {/* Elegant Text Kicker */}
             <div className="flex items-center justify-center lg:justify-start gap-2 font-jost text-xs sm:text-sm font-bold tracking-[0.22em] text-gold-dark uppercase">
-              <span className="w-6 h-px bg-gold/60" />
               <span>100% Pure Premium Ghee • Farali & Vrat Special</span>
             </div>
 
@@ -101,6 +100,18 @@ export const HeroSection: React.FC = () => {
                 <span>View 250g, 500g & 1kg Packs</span>
                 <ExternalLink className="w-3 h-3 text-primary-dark" />
               </a>
+            </div>
+
+            {/* Promotional Free Shipping Offers Badges */}
+            <div className="pt-0.5 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 border border-primary/40 text-deep-brown font-semibold shadow-xs">
+                <span className="text-primary-dark font-bold">✓</span>
+                <span>Free Shipping above ₹999</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 border border-primary/30 text-deep-brown font-semibold shadow-xs">
+                <span className="text-primary-dark font-bold">✓</span>
+                <span>First Order: Free Shipping above ₹599</span>
+              </span>
             </div>
 
             {/* Reassurance & Social Proof */}

@@ -1,4 +1,12 @@
+# robots.txt for Kopra Pak (Bhagvat Prasadam)
+# https://koprapak.in
+
 User-agent: *
 Allow: /
+Disallow: /404
 
+# Host
+Host: https://koprapak.in
+
+# Sitemaps
 Sitemap: https://koprapak.in/sitemap.xml

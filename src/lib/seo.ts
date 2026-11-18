@@ -75,6 +75,7 @@ export function getProductSchema() {
       lowPrice: '130.00',
       highPrice: '519.00',
       offerCount: '3',
+      priceValidUntil: '2027-12-31',
       availability: 'https://schema.org/InStock',
       url: kopraPakProduct.productUrl,
       seller: {
@@ -82,6 +83,17 @@ export function getProductSchema() {
         name: kopraPakProduct.vendor,
       },
     },
+  };
+}
+
+export function getWebsiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: siteConfig.brandName,
+    alternateName: 'Bhagvat Prasadam Kopra Pak',
+    url: siteConfig.siteUrl,
+    inLanguage: ['en-IN', 'gu-IN', 'hi-IN'],
   };
 }
 

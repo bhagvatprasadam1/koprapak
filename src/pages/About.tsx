@@ -58,9 +58,7 @@ export const About: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
           <span className="font-jost text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-primary flex items-center justify-center gap-2 mb-3">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
             DEVOTIONAL CRAFTSMANSHIP & SACRED PURITY
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             Preserving Sacred Purity & Authentic Sweet Tradition
@@ -94,8 +92,9 @@ export const About: React.FC = () => {
                   alt="Handcrafted Gujarati Kopra Pak (Coconut Barfi / Nariyal Barfi) sweet cubes prepared with Pure Premium Ghee and devotional craftsmanship by Bhagvat Prasadam"
                   className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  width="600"
-                  height="450"
+                  decoding="async"
+                  width="1000"
+                  height="1000"
                 />
               </div>
             </div>
@@ -158,20 +157,32 @@ export const About: React.FC = () => {
         {/* Visual Heritage Grid: 2 columns on all devices */}
         <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-8 sm:mb-10 lg:mb-12">
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-gold/40 bg-white">
-            <img
-              src="/images/kopra-pak-gift-box.jpg"
-              alt="Luxury festive Kopra Pak (Coconut Barfi / Nariyal Barfi) keepsake sweet box with brass diyas for Diwali, Farali fasting, and temple prasad by Bhagvat Prasadam"
-              className="w-full h-44 sm:h-72 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
+            <picture className="w-full h-44 sm:h-72 lg:h-80 block">
+              <source srcSet="/images/kopra-pak-gift-box.webp" type="image/webp" />
+              <img
+                src="/images/kopra-pak-gift-box.jpg"
+                alt="Luxury festive Kopra Pak (Coconut Barfi / Nariyal Barfi) keepsake sweet box with brass diyas for Diwali, Farali fasting, and temple prasad by Bhagvat Prasadam"
+                width="1000"
+                height="895"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-gold/40 bg-white">
-            <img
-              src="/images/kopra-pak-macro-texture.jpg"
-              alt="Melt-in-mouth soft fudge texture of authentic Gujarati Kopra Pak (Coconut Barfi / Nariyal Barfi) enriched with tender coconut shreds and pistachios"
-              className="w-full h-44 sm:h-72 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
+            <picture className="w-full h-44 sm:h-72 lg:h-80 block">
+              <source srcSet="/images/kopra-pak-macro-texture.webp" type="image/webp" />
+              <img
+                src="/images/kopra-pak-macro-texture.jpg"
+                alt="Melt-in-mouth soft fudge texture of authentic Gujarati Kopra Pak (Coconut Barfi / Nariyal Barfi) enriched with tender coconut shreds and pistachios"
+                width="1200"
+                height="896"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
 

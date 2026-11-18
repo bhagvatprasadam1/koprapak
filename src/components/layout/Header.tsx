@@ -35,13 +35,13 @@ export const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+        className={`w-full transition-all duration-300 ${
           isScrolled
-            ? 'bg-cream/95 backdrop-blur-md py-1.5 sm:py-2 border-b border-light-beige'
-            : 'bg-cream py-2 sm:py-2.5 lg:py-3 border-b border-light-beige/60'
+            ? 'bg-cream/95 backdrop-blur-md py-1 sm:py-1.5 shadow-sm'
+            : 'bg-cream py-1.5 sm:py-2'
         }`}
       >
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[72px] sm:min-h-[80px] lg:min-h-[90px] xl:min-h-[98px]">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[64px] sm:min-h-[70px] lg:min-h-[72px]">
           
           {/* Left: Brand Logo */}
           <div className="flex items-center">
@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
                 alt="Kopra Pak - Authentic Gujarati Coconut Barfi & Nariyal Barfi Sweets by Bhagvat Prasadam"
                 width="1024"
                 height="452"
-                className="w-36 sm:w-44 md:w-52 lg:w-60 xl:w-68 2xl:w-72 h-auto max-h-14 sm:max-h-16 lg:max-h-20 xl:max-h-22 object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-32 sm:w-36 md:w-44 lg:w-48 h-auto max-h-12 sm:max-h-14 lg:max-h-[50px] object-contain transition-transform duration-300 group-hover:scale-105"
                 loading="eager"
               />
             </Link>

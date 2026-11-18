@@ -27,14 +27,18 @@ export const GiftingTeaser: React.FC = () => {
           {/* Visual Showcase */}
           <div className="lg:col-span-6 relative">
             <div className="rounded-3xl overflow-hidden border-2 border-gold/40 bg-white">
-              <img
-                src="/images/kopra-pak-gift-box.jpg"
-                alt="Luxury festive Kopra Pak (Coconut Barfi / Nariyal Barfi) keepsake gift box with brass diyas, saffron, and marigold flowers for Diwali and wedding gifting by Bhagvat Prasadam"
-                className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-                width="600"
-                height="450"
-              />
+              <picture className="w-full h-auto block">
+                <source srcSet="/images/kopra-pak-gift-box.webp" type="image/webp" />
+                <img
+                  src="/images/kopra-pak-gift-box.jpg"
+                  alt="Luxury festive Kopra Pak (Coconut Barfi / Nariyal Barfi) keepsake gift box with brass diyas, saffron, and marigold flowers for Diwali and wedding gifting by Bhagvat Prasadam"
+                  className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
+                  width="1000"
+                  height="895"
+                />
+              </picture>
             </div>
             <div className="mt-3 text-center text-xs text-muted-text italic">
               Available in 250gm (₹130), 500gm (₹260), and 1kg (₹519) gift boxes

@@ -13,6 +13,7 @@ export const NotFound: React.FC = () => {
         keywords={seoData.notFound.keywords}
         canonicalPath={seoData.notFound.canonicalPath}
         ogImage={seoData.notFound.ogImage}
+        robots="noindex, follow"
       />
 
       <div className="max-w-md mx-auto space-y-6">

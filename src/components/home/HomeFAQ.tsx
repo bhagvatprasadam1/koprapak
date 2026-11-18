@@ -6,7 +6,7 @@ import { Button } from '../common/Button';
 
 export const HomeFAQ: React.FC = () => {
   const homeFaqs = faqsData.filter((f) => f.featuredOnHome);
-  const [openId, setOpenId] = useState<string | null>(homeFaqs[0]?.id || null);
+  const [openId, setOpenId] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));

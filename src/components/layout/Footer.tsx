@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { siteConfig } from "../../data/siteConfig";
 import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import { WhatsAppIcon } from "../common/WhatsAppIcon";
+import { AppStoreBadges } from "../common/AppStoreBadges";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -289,43 +290,29 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Traditional Kopra Pak Heritage Engraving Illustration Banner - Full Footer Width */}
-      <div className="w-full overflow-hidden pt-4 pb-2">
-        <div className="w-full flex items-center justify-center">
-          <img
-            src="/images/kopra-pak-footer-illustration.png"
-            alt="Traditional Gujarati Kopra Pak culinary heritage art illustration depicting slow cooking in Pure Premium Ghee and milk mawa by Bhagvat Prasadam"
-            width="1920"
-            height="1080"
-            className="w-full max-w-[1700px] h-auto object-contain select-none pointer-events-none block px-1 sm:px-3 md:px-6"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Pan-India Express Delivery SEO Tagline */}
-        <div className="py-2.5 text-center text-[11px] sm:text-xs text-muted-text/80 border-t border-light-beige/50 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-          <span className="font-semibold text-deep-brown">Express Delivery Hubs:</span>
-          <span>Mumbai</span>
-          <span>•</span>
-          <span>Ahmedabad</span>
-          <span>•</span>
-          <span>Surat</span>
-          <span>•</span>
-          <span>Vadodara</span>
-          <span>•</span>
-          <span>Pune</span>
-          <span>•</span>
-          <span>Delhi NCR</span>
-          <span>•</span>
-          <span>Bengaluru</span>
-          <span>•</span>
-          <span>Hyderabad & 20,000+ Pin Codes Across India</span>
+        {/* Mobile App Promotion Bar (Exact footer background, zero extra whitespace before copyright) */}
+        <div className="py-2.5 border-t border-light-beige/70 flex items-center justify-center text-center">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 flex-nowrap whitespace-nowrap overflow-x-hidden">
+            {/* Desktop Text */}
+            <span className="hidden sm:inline text-xs md:text-sm text-dark-text font-medium">
+              Install <strong className="font-semibold text-deep-brown">{siteConfig.brandName}</strong> App &amp; Get{' '}
+              <span className="text-primary-dark font-bold">2% Extra Discount</span> on App! Available on:
+            </span>
+
+            {/* Mobile Text (Compact single-line fitting 360px-390px screens) */}
+            <span className="inline sm:hidden text-[11px] text-dark-text font-medium">
+              Install App &amp; Get{' '}
+              <span className="text-primary-dark font-bold">2% Off</span>:
+            </span>
+
+            {/* App Store & Play Store Badges */}
+            <AppStoreBadges theme="light" size="xs" />
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-3 border-t border-light-beige/70 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
+        <div className="pt-2 border-t border-light-beige/50 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
           <p>
             © {currentYear} {siteConfig.brandName}. All rights reserved. Crafted
             with Gujarati tradition.

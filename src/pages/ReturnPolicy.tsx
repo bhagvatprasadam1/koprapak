@@ -66,9 +66,9 @@ export const ReturnPolicy: React.FC = () => {
             <div className="p-4 sm:p-5 rounded-2xl bg-cream/70 border border-light-beige flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif font-bold text-deep-brown text-sm">
+                <h3 className="font-serif font-bold text-deep-brown text-sm">
                   100% Transit Damage Guarantee
-                </h4>
+                </h3>
                 <p className="text-muted-text text-xs mt-1 leading-relaxed">
                   Damaged or tampered packages are replaced immediately or fully
                   refunded.
@@ -79,9 +79,9 @@ export const ReturnPolicy: React.FC = () => {
             <div className="p-4 sm:p-5 rounded-2xl bg-cream/70 border border-light-beige flex items-start gap-3">
               <RefreshCw className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif font-bold text-deep-brown text-sm">
+                <h3 className="font-serif font-bold text-deep-brown text-sm">
                   Fast 24-Hour Resolution
-                </h4>
+                </h3>
                 <p className="text-muted-text text-xs mt-1 leading-relaxed">
                   Share photos of any transit issue on WhatsApp for instant
                   priority assistance.
@@ -210,9 +210,9 @@ export const ReturnPolicy: React.FC = () => {
             <div className="flex items-center gap-3 text-center sm:text-left">
               <MessageCircle className="w-6 h-6 text-gold flex-shrink-0" />
               <div>
-                <h4 className="font-serif font-bold text-base sm:text-lg text-cream">
+                <h3 className="font-serif font-bold text-base sm:text-lg text-cream">
                   Need Help With An Order?
-                </h4>
+                </h3>
                 <p className="text-xs text-cream/80">
                   Our customer care team is available on WhatsApp daily from
                   9:00 AM to 8:00 PM.

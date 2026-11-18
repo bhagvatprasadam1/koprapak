@@ -58,14 +58,14 @@ export const seoData: Record<string, PageSEO> = {
   },
   privacyPolicy: {
     title: 'Privacy Policy | Bhagvat Prasadam Authentic Kopra Pak',
-    description: 'Our customer data privacy policy regarding personal orders, WhatsApp inquiries, and website interactions for Bhagvat Prasadam sweets.',
+    description: 'Read the customer data privacy policy regarding online orders, WhatsApp inquiries, and website interactions for Bhagvat Prasadam authentic Kopra Pak sweets.',
     keywords: 'Privacy policy, customer data protection, Kopra Pak privacy, Bhagvat Prasadam data safety',
     canonicalPath: '/privacy-policy',
     ogImage: '/images/kopra-pak-product.webp',
   },
   terms: {
     title: 'Terms & Conditions | Bhagvat Prasadam Authentic Kopra Pak',
-    description: 'Terms of service, inquiry policies, delivery guidelines, and packaging standards for our handcrafted Kopra Pak brand.',
+    description: 'Review terms of service, inquiry policies, packaging standards, and delivery guidelines for handcrafted Kopra Pak (Coconut Barfi) by Bhagvat Prasadam.',
     keywords: 'Terms and conditions, delivery terms, order inquiries terms, Kopra Pak',
     canonicalPath: '/terms',
     ogImage: '/images/kopra-pak-product.webp',
@@ -79,14 +79,14 @@ export const seoData: Record<string, PageSEO> = {
   },
   returnPolicy: {
     title: 'Return & Refund Policy | Freshness Guarantee | Bhagvat Prasadam',
-    description: 'Our transparent return, refund, and transit damage replacement policy for Kopra Pak by Bhagvat Prasadam.',
+    description: 'Learn about our transparent return, refund, and transit damage replacement policy for fresh handcrafted Kopra Pak coconut sweets by Bhagvat Prasadam.',
     keywords: 'Kopra pak return policy, refund policy, transit damage replacement, food safety returns Bhagvat Prasadam, sweet refund guarantee',
     canonicalPath: '/return-policy',
     ogImage: '/images/kopra-pak-product.webp',
   },
   notFound: {
     title: '404: Sweet Not Found | Authentic Gujarati Kopra Pak',
-    description: 'The page you were looking for seems to have gone missing. Return home to discover our authentic Gujarati Kopra Pak (Coconut Barfi).',
+    description: 'The sweet page you were looking for cannot be found. Return to our homepage to explore authentic Gujarati Kopra Pak (Coconut Barfi) in Pure Ghee.',
     keywords: '404, not found, Kopra Pak',
     canonicalPath: '/404',
     ogImage: '/images/kopra-pak-product.webp',

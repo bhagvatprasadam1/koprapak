@@ -49,14 +49,14 @@ export const ShippingPolicy: React.FC = () => {
             <div className="p-4 rounded-xl bg-light-beige/50 border border-light-beige flex items-start gap-3">
               <Truck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif font-bold text-deep-brown text-sm">Pan India Express Logistics</h4>
+                <h3 className="font-serif font-bold text-deep-brown text-sm">Pan India Express Logistics</h3>
                 <p className="text-muted-text text-xs mt-0.5">Delivered via reliable air & surface express couriers.</p>
               </div>
             </div>
             <div className="p-4 rounded-xl bg-light-beige/50 border border-light-beige flex items-start gap-3">
               <Box className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-serif font-bold text-deep-brown text-sm">Airtight Food-Grade Sealing</h4>
+                <h3 className="font-serif font-bold text-deep-brown text-sm">Airtight Food-Grade Sealing</h3>
                 <p className="text-muted-text text-xs mt-0.5">Preserves pure premium ghee aroma and natural shelf life.</p>
               </div>
             </div>

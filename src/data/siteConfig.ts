@@ -23,6 +23,10 @@ export interface SiteConfig {
     youtube: string;
     whatsapp: string;
   };
+  apps: {
+    playStore: string;
+    appStore: string;
+  };
   businessHours: string;
   originYear: string;
 }
@@ -33,17 +37,17 @@ export const siteConfig: SiteConfig = {
   subTagline: 'Luscious slow-cooked grated coconut in Pure Premium Ghee, simmered with aromatic cardamom, kesar, and rich milk mawa, handcrafted by Bhagvat Prasadam.',
   siteUrl: 'https://koprapak.in',
   phone: '+918850011652',
-  displayPhone: '+91-8850011652',
+  displayPhone: '+91 88500 11652',
   whatsappNumber: '918850011652',
-  email: 'hello@koprapak.in',
+  email: 'info@megascale.in',
   address: {
-    street: '411, New Escon Plaza, Chhaprabhatha Road, Amroli',
+    street: '411-412, New Escon Plaza, Chhaprabhatha Road, Amroli',
     city: 'Surat',
     state: 'Gujarat',
     postalCode: '394107',
     country: 'India',
     region: 'Western India',
-    full: '411, New Escon Plaza, Chhaprabhatha Road, Amroli, Surat, Gujarat 394107',
+    full: '411-412, New Escon Plaza, Chhaprabhatha Road, Amroli, Surat, Gujarat - 394107',
   },
   announcement: 'Fresh Pure Premium Ghee Kopra Pak • Traditional Gujarati Coconut Barfi • Farali & Vrat Special • Pan-India Delivery',
   socials: {
@@ -51,6 +55,10 @@ export const siteConfig: SiteConfig = {
     facebook: 'https://www.facebook.com/megascale.surat.96',
     youtube: 'https://youtube.com/@koprapak_gujarat',
     whatsapp: 'https://wa.me/918850011652',
+  },
+  apps: {
+    playStore: 'https://play.google.com/store/apps/details?id=in.sellonapp.bhagvatprasadam&pcampaignid=web_share',
+    appStore: 'https://apps.apple.com/in/app/bhagvat-prasadam/id6751397354',
   },
   businessHours: 'Mon to Sun: 9:00 AM to 9:00 PM IST',
   originYear: '1974',

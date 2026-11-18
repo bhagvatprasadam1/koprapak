@@ -38,9 +38,7 @@ export const Process: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
           <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] mb-3 flex items-center justify-center gap-2">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
             TIME-HONOURED TECHNIQUE
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             The Traditional Kopra Pak Making Process
@@ -55,8 +53,7 @@ export const Process: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
               <span className="font-jost text-gold-dark font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-                <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
-                THE ART OF premium ghee ROASTING & MAWA REDUCTION
+                THE ART OF PREMIUM GHEE ROASTING & MAWA REDUCTION
               </span>
               <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl text-deep-brown font-normal leading-tight">
                 How Fresh Grated Coconut & Pure Ghee Create Velvety Texture
@@ -70,14 +67,18 @@ export const Process: React.FC = () => {
             </div>
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border-2 border-gold/50">
-                <img
-                  src="/images/kopra-pak-process-craft.jpg"
-                  alt="Traditional halwai confectionery craft: slow cooking freshly grated coconut and milk mawa in 100% Pure Premium Ghee inside a large brass kadai for authentic Kopra Pak (Coconut Barfi)"
-                  className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  width="600"
-                  height="450"
-                />
+                <picture className="w-full h-auto block">
+                  <source srcSet="/images/kopra-pak-process-craft.webp" type="image/webp" />
+                  <img
+                    src="/images/kopra-pak-process-craft.jpg"
+                    alt="Traditional halwai confectionery craft: slow cooking freshly grated coconut and milk mawa in 100% Pure Premium Ghee inside a large brass kadai for authentic Kopra Pak (Coconut Barfi)"
+                    className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="670"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -135,9 +136,9 @@ export const Process: React.FC = () => {
 
         {/* Next Step CTA */}
         <div className="bg-deep-brown text-cream rounded-3xl p-6 sm:p-10 border border-gold/40 text-center space-y-4 sm:space-y-5">
-          <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl font-normal text-cream">
+          <h2 className="font-serif text-xl sm:text-2xl lg:text-3xl font-normal text-cream">
             Taste the Divine Result of Pure Devotion
-          </h3>
+          </h2>
           <p className="text-cream/80 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
             Experience our fresh batch of traditional Gujarati Kopra Pak, delivered directly from our kitchen to your doorstep across India.
           </p>

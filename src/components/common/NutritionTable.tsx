@@ -65,10 +65,9 @@ export const NutritionTable: React.FC = () => {
       <div className="bg-white rounded-3xl border border-light-beige p-6 sm:p-10 lg:p-12">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 sm:pb-8 border-b border-light-beige">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 sm:pb-8">
           <div className="space-y-2">
             <span className="font-jost text-gold font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-              <span className="inline-block w-3 h-0.5 bg-gold/70"></span>
               AUTHENTIC QUALITY & PURITY PROFILE
             </span>
             <h3 className="font-serif text-2xl sm:text-3xl text-deep-brown font-normal leading-tight">

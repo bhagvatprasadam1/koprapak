@@ -8,6 +8,7 @@ export interface SEOHeadProps {
   canonicalPath?: string;
   ogImage?: string;
   schema?: object | object[];
+  robots?: string;
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
@@ -15,8 +16,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   description,
   keywords,
   canonicalPath = '/',
-  ogImage = '/images/hero-traditional-box.webp',
+  ogImage = '/images/kopra-pak-hero2.webp',
   schema,
+  robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
 }) => {
   useEffect(() => {
     // Set title
@@ -41,6 +43,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
     // Update standard meta
     setMeta('description', description);
+    setMeta('robots', robots);
     if (keywords) {
       setMeta('keywords', keywords);
     }
@@ -85,7 +88,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       }
       script.textContent = JSON.stringify(schema);
     }
-  }, [title, description, keywords, canonicalPath, ogImage, schema]);
+  }, [title, description, keywords, canonicalPath, ogImage, schema, robots]);
 
   return null;
 };

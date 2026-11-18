@@ -11,14 +11,18 @@ export const TextureSensory: React.FC = () => {
           {/* Left: Macro Photography */}
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden border border-gold/40 bg-white">
-              <img
-                src="/images/kopra-pak-macro-texture.jpg"
-                alt="Extreme macro texture of authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) sweet cube, showing moist grated coconut shreds glistening with Pure Premium Ghee, mawa, and Kashmiri saffron"
-                className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-                width="600"
-                height="450"
-              />
+              <picture className="w-full h-auto block">
+                <source srcSet="/images/kopra-pak-macro-texture.webp" type="image/webp" />
+                <img
+                  src="/images/kopra-pak-macro-texture.jpg"
+                  alt="Extreme macro texture of authentic Kopra Pak (Coconut Barfi / Nariyal Barfi) sweet cube, showing moist grated coconut shreds glistening with Pure Premium Ghee, mawa, and Kashmiri saffron"
+                  className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="896"
+                />
+              </picture>
             </div>
             <div className="absolute -bottom-3 -right-3 bg-primary text-deep-brown p-3.5 rounded-2xl border border-primary-hover shadow-md hidden sm:block max-w-[220px]">
               <span className="font-serif font-bold text-sm block mb-0.5">
@@ -31,7 +35,6 @@ export const TextureSensory: React.FC = () => {
           {/* Right: Dramatic Sensory Copy */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
             <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-              <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
               THE SENSORY DISTINCTION
             </span>
 
